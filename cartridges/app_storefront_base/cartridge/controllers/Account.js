@@ -12,7 +12,7 @@ var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 
 /**
  * Checks if the email value entered is correct format
- * add commment
+ * sdsdsdsgi
  * @param {string} email - email string to check if valid
  * @returns {boolean} Whether email is valid
  */
