@@ -23,8 +23,8 @@ function validateEmail(email) {
 
 /**
  * Account-Show : The Account-Show endpoint will render the shopper's account page. Once a shopper logs in they will see is a dashboard that displays profile, address, payment and order information.
- * Other
- * @name Base/Account-Show
+ *Hello
+ *  @name Base/Account-Show
  * @function
  * @memberof Account
  * @param {middleware} - server.middleware.https
