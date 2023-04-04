@@ -10,7 +10,8 @@ var ProductMgr = require('dw/catalog/ProductMgr');
 var HashMap = require('dw/util/HashMap');
 
 /**
- * EinsteinCarousel-Load : This endpoint is used to populate the model with information needed to display a carousel with product tiles based on einstein recommendations
+ * EinsteinCarousel-Load :
+ * jjj This endpoint is used to populate the model with information needed to display a carousel with product tiles based on einstein recommendations
  * @name Base/EinsteinCarousel-Load
  * @function
  * @memberof EinsteinCarousel
