@@ -14,6 +14,7 @@ var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
  * Main entry point for Checkout
  * ooo
  * lll
+ * 
  */
 
 /**
