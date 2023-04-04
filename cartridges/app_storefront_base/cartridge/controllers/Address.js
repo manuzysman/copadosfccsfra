@@ -14,6 +14,7 @@ var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 
 /**
  * Creates a list of address model for the logged in user
+ * klll
  * @param {string} customerNo - customer number of the current customer
  * @returns {List} a plain list of objects of the current customer's addresses
  */
