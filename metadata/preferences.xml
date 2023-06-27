@@ -28,7 +28,9 @@
     </standard-preferences>
     <custom-preferences>
         <all-instances/>
-        <development/>
+        <development>
+            <preference preference-id="Copado">YES5</preference>
+        </development>
         <staging/>
         <production/>
     </custom-preferences>
