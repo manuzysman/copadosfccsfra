@@ -9,7 +9,7 @@ var csrfProtection = require('*/cartridge/scripts/middleware/csrf');
 var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 
 /**
- * ConsentTracking-SetSession : DEPRECATED - Replaced by ConsentTracking-SetConsent, which includes CSRF protection
+ * ConsentTracking-SetSession : DEPRECATED - Replaced by ConsentTracking-SetConsent, which includes CSRF protection TEST
  * @name Base/ConsentTracking-SetSession
  * @function
  * @memberof ConsentTracking
