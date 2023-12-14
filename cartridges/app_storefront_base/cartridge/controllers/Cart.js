@@ -10,7 +10,7 @@ var csrfProtection = require('*/cartridge/scripts/middleware/csrf');
 var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 
 /**
- * Cart-MiniCart : The Cart-MiniCart endpoint is responsible for displaying the cart icon in the header with the number of items in the current basket
+ * Cart-MiniCart Copado : The Cart-MiniCart endpoint is responsible for displaying the cart icon in the header with the number of items in the current basket
  * @name Base/Cart-MiniCart
  * @function
  * @memberof Cart
