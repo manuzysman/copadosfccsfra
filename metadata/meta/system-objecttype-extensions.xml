@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
     <type-extension type-id="Appeasement">
         <system-attribute-definitions>
@@ -2779,7 +2778,7 @@
                         <value>0080</value>
                     </value-definition>
                     <value-definition>
-                        <display xml:lang="x-default">Bluetooth®</display>
+                        <display xml:lang="x-default">Bluetooth&#174;</display>
                         <value>0090</value>
                     </value-definition>
                     <value-definition>
