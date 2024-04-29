@@ -3,6 +3,7 @@
         "copadouserstoryid": "a1v5j000001VSbjAAG",
         "copadouserstoryname": "US-0000190",
         "copadobasebranch": "main",
-        "copadoenvbranch": "runint"
+        "copadoenvbranch": "runint",
+        "copadolastcommit": "ac7e50687943022357dfa513ca370a97bd92e5ca"
     }
 }
