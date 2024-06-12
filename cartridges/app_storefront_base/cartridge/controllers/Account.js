@@ -12,6 +12,7 @@ var consentTracking = require('*/cartridge/scripts/middleware/consentTracking');
 
 /**
  * Checks if the email value entered is correct format
+ * sdsdsdsgi
  * @param {string} email - email string to check if valid
  * @returns {boolean} Whether email is valid
  */
@@ -22,6 +23,7 @@ function validateEmail(email) {
 
 /**
  * Account-Show : The Account-Show endpoint will render the shopper's account page. Once a shopper logs in they will see is a dashboard that displays profile, address, payment and order information.
+ * Other
  * @name Base/Account-Show
  * @function
  * @memberof Account
