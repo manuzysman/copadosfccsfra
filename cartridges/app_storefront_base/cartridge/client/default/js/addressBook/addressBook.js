@@ -1,3 +1,4 @@
+/** Create an alert to display the error message */
 'use strict';
 
 var formValidation = require('../components/formValidation');
