@@ -6,7 +6,7 @@ var url;
 var isDefault;
 
 /**
- * Create an alert to display the error message
+ * Create an alert to display the error messagerfeererefdfsdfdsfdscsdcdseaearezr
  * @param {Object} message - Error message to display
  */
 function createErrorNotification(message) {
