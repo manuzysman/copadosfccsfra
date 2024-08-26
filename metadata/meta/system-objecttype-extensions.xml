@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
     <type-extension type-id="Appeasement">
         <system-attribute-definitions>
@@ -52,6 +51,15 @@
                 </value-definitions>
             </attribute-definition>
         </system-attribute-definitions>
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="Copado_test">
+                <display-name xml:lang="x-default">Test Conflact</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
     </type-extension>
 
     <type-extension type-id="AppeasementItem">
@@ -2779,7 +2787,7 @@
                         <value>0080</value>
                     </value-definition>
                     <value-definition>
-                        <display xml:lang="x-default">Bluetooth®</display>
+                        <display xml:lang="x-default">Bluetooth&#174;</display>
                         <value>0090</value>
                     </value-definition>
                     <value-definition>
