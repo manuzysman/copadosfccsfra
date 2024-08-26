@@ -1,0 +1,5211 @@
+metadata: 
+  "@attributes": 
+    xmlns: "http://www.demandware.com/xml/impex/metadata/2006-10-31"
+  "type-extension": 
+    - "@attributes": 
+        "type-id": Appeasement
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": appeasementNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": createdBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": invoiceNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": modifiedBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": reasonCode
+            "value-definitions": 
+              "value-definition": 
+                - display: "Dissatisfied Customer"
+                  value: DISSATISFIED_CUSTOMER
+                - display: "Manufacturing Defect"
+                  value: MANUFACTURING_DEFECT
+                - display: "Delayed Delivery"
+                  value: DELAYED_DELIVERY
+                - display: "Product Not Received"
+                  value: PRODUCT_NOT_RECEIVED
+          - "@attributes": 
+              "attribute-id": reasonNote
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: OPEN
+                  value: OPEN
+                - display: COMPLETED
+                  value: COMPLETED
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": Copado_test
+          "display-name": "Test Conflaaaa"
+          type: string
+          "mandatory-flag": false
+          "externally-managed-flag": false
+          "min-length": 0
+    - "@attributes": 
+        "type-id": AppeasementItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": appeasementNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": grossPrice
+          - "@attributes": 
+              "attribute-id": itemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": netPrice
+          - "@attributes": 
+              "attribute-id": orderItemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": tax
+          - "@attributes": 
+              "attribute-id": taxBasis
+    - "@attributes": 
+        "type-id": Basket
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": businessType
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: B2C
+                  value: 1
+                - display: B2B
+                  value: 2
+          - "@attributes": 
+              "attribute-id": channelType
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: Storefront
+                  value: 1
+                - display: "Call Center"
+                  value: 2
+                - display: Marketplace
+                  value: 3
+                - display: DSS
+                  value: 4
+                - display: Store
+                  value: 5
+                - display: Pinterest
+                  value: 6
+                - display: Twitter
+                  value: 7
+                - display: "Facebook Ads"
+                  value: 8
+                - display: Subscriptions
+                  value: 9
+                - display: "Online Reservation"
+                  value: 10
+                - display: "Customer Service Center"
+                  value: 11
+                - display: "Instagram Commerce"
+                  value: 12
+                - display: Google
+                  value: 13
+                - display: TikTok
+                  value: 14
+                - display: Snapchat
+                  value: 15
+                - display: WhatsApp
+                  value: 16
+                - display: YouTube
+                  value: 17
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": currencyCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customerEmail
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customerName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customerNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": sessionAddressBook
+          "display-name": "Session Address Book"
+          type: text
+          "mandatory-flag": false
+          "externally-managed-flag": false
+      "group-definitions": 
+        "attribute-group": 
+          "@attributes": 
+            "group-id": Status
+          "display-name": Status
+    - "@attributes": 
+        "type-id": BonusDiscountLineItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": bonusProductLineItemUUID
+          "display-name": "Bonus Product Line Item UUID"
+          description: "This represents the UUID of the product line item that holds the qualifying product."
+          type: string
+          "mandatory-flag": false
+          "externally-managed-flag": false
+          "min-length": 0
+    - "@attributes": 
+        "type-id": Campaign
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+            "field-length": 50
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "field-height": 1
+          - "@attributes": 
+              "attribute-id": endDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": startDate
+    - "@attributes": 
+        "type-id": Catalog
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": displayName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": Category
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": displayMode
+            "value-definitions": 
+              "value-definition": 
+                - display: merged
+                  value: 1
+                - display: individual
+                  value: 0
+          - "@attributes": 
+              "attribute-id": displayName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": image
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": online
+          - "@attributes": 
+              "attribute-id": onlineFrom
+          - "@attributes": 
+              "attribute-id": onlineTo
+          - "@attributes": 
+              "attribute-id": pageDescription
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageKeywords
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageTitle
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageURL
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": searchPlacement
+            "value-definitions": 
+              "value-definition": 
+                - display: "Top Featured Product"
+                  value: 8
+                - display: "Featured Product"
+                  value: 7
+                - "@attributes": 
+                    default: true
+                  display: Product
+                  value: 6
+                - display: "Secondary Product"
+                  value: 5
+                - display: "Featured Accessory"
+                  value: 4
+                - display: Accessory
+                  value: 3
+                - display: "Spare Part"
+                  value: 2
+                - display: "NLA Product"
+                  value: 1
+          - "@attributes": 
+              "attribute-id": searchRank
+            "value-definitions": 
+              "value-definition": 
+                - display: High
+                  value: 3
+                - "@attributes": 
+                    default: true
+                  display: Medium
+                  value: 2
+                - display: Low
+                  value: 1
+          - "@attributes": 
+              "attribute-id": siteMapChangeFrequency
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: always
+                  value: always
+                - display: hourly
+                  value: hourly
+                - display: daily
+                  value: daily
+                - display: weekly
+                  value: weekly
+                - display: monthly
+                  value: monthly
+                - display: yearly
+                  value: yearly
+                - display: never
+                  value: never
+          - "@attributes": 
+              "attribute-id": siteMapIncluded
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: YES
+                  value: 1
+                - display: NO
+                  value: 0
+          - "@attributes": 
+              "attribute-id": siteMapPriority
+            "min-value": "0.0"
+            "max-value": "1.0"
+          - "@attributes": 
+              "attribute-id": template
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": thumbnail
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": alternativeUrl
+            "display-name": "Alternative URL"
+            description: "Renders an alternative URL in main navigation. Uses Commerce Cloud content url notation. For example: \x24url\x28\x27Account-Show\x27\x29\x24 or normal URL http://xchange.demandware.com"
+            type: html
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "field-length": 0
+            "field-height": 2
+          - "@attributes": 
+              "attribute-id": catBannerID
+            "display-name": "Category Banner ID"
+            description: "Used to define the content asset used to populate a grid page banner for a category. This value is applied to all sub-category navigation \x28cascading\x29 if no specific catBannerID has been defined for  a sub-category."
+            type: string
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customCSSFile
+            "display-name": "Custom CSS File"
+            description: "Use this attribute to apply custom styles for this category."
+            type: image
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+          - "@attributes": 
+              "attribute-id": enableCompare
+            "display-name": "Enable Compare"
+            description: "Used to define if/when the Compare feature is to be visualized in the storefront based on navigation. If enableCompare \x3D FALSE\x2C no Compare checkboxes will be displayed in the grid view. If enableCompare \x3D TRUE\x2C the category \x28and its children\x29 will support the Compare feature."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+          - "@attributes": 
+              "attribute-id": headerMenuBanner
+            "display-name": "Header Menu Banner"
+            type: html
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+          - "@attributes": 
+              "attribute-id": headerMenuOrientation
+            "display-name": "Header Menu Orientation"
+            description: "Which way to orient the menu and optional header menu HTML. Vertical will list all in one line. Horizontal will list in columns."
+            type: "enum-of-string"
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: Horizontal
+                  value: Horizontal
+                - display: Vertical
+                  value: Vertical
+          - "@attributes": 
+              "attribute-id": showInMenu
+            "display-name": "Show in Menu Navigation"
+            description: "Used to indicate that a category \x28such as Mens -\x3E Footwear -\x3E Boots\x29 will display in the roll-over navigation. A sub-category only shows if also the parent category is marked as showInMenu. Up to three category levels are shown in roll-over navigation."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+          - "@attributes": 
+              "attribute-id": sizeChartID
+            "display-name": "Size Chart"
+            description: "Used to define the content asset ID of the Size Chart that is appropriate for products whose PRIMARY category is the associated category \x28and its children\x29. Whenever a product detail page \x28or quick view\x29 is rendered\x2C the Size Chart link is populated based on the value of this attribute for the products primary categorization. If not defined\x2C NO size chart link is displayed."
+            type: string
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": slotBannerHtml
+            "display-name": "Slot Banner HTML"
+            type: html
+            "localizable-flag": true
+            "mandatory-flag": false
+            "externally-managed-flag": false
+          - "@attributes": 
+              "attribute-id": slotBannerImage
+            "display-name": "Category Landing Slot Image"
+            description: "Image used on either the top or bottom slot on the category landing pages."
+            type: image
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": ExternalSearch
+            "display-name": "Search Engine Optimization Support"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": pageTitle
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageDescription
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageKeywords
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageURL
+                  system: true
+          - "@attributes": 
+              "group-id": SiteMap
+            "display-name": "Sitemap Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": siteMapIncluded
+                  system: true
+              - "@attributes": 
+                  "attribute-id": siteMapChangeFrequency
+                  system: true
+              - "@attributes": 
+                  "attribute-id": siteMapPriority
+                  system: true
+          - "@attributes": 
+              "group-id": Presentation
+            "display-name": "Presentation Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": thumbnail
+                  system: true
+              - "@attributes": 
+                  "attribute-id": image
+                  system: true
+              - "@attributes": 
+                  "attribute-id": template
+                  system: true
+              - "@attributes": 
+                  "attribute-id": slotBannerImage
+              - "@attributes": 
+                  "attribute-id": customCSSFile
+          - "@attributes": 
+              "group-id": SearchRanking
+            "display-name": "Search Ranking"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": searchPlacement
+                  system: true
+              - "@attributes": 
+                  "attribute-id": searchRank
+                  system: true
+          - "@attributes": 
+              "group-id": VariationGroups
+            "display-name": "Variation Groups"
+            attribute: 
+              "@attributes": 
+                "attribute-id": displayMode
+                system: true
+          - "@attributes": 
+              "group-id": customAttributes
+            "display-name": Custom
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": sizeChartID
+              - "@attributes": 
+                  "attribute-id": showInMenu
+              - "@attributes": 
+                  "attribute-id": enableCompare
+              - "@attributes": 
+                  "attribute-id": catBannerID
+              - "@attributes": 
+                  "attribute-id": headerMenuOrientation
+              - "@attributes": 
+                  "attribute-id": headerMenuBanner
+              - "@attributes": 
+                  "attribute-id": alternativeUrl
+    - "@attributes": 
+        "type-id": CategoryAssignment
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": calloutMsg
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": image
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": longDescription
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": shortDescription
+    - "@attributes": 
+        "type-id": Content
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": aspectType
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": config
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": data
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+            "field-height": 10
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": onlineFlag
+          - "@attributes": 
+              "attribute-id": pageDescription
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageKeywords
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageTitle
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageURL
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": searchWords
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": searchableFlag
+          - "@attributes": 
+              "attribute-id": siteMapChangeFrequency
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: always
+                  value: always
+                - display: hourly
+                  value: hourly
+                - display: daily
+                  value: daily
+                - display: weekly
+                  value: weekly
+                - display: monthly
+                  value: monthly
+                - display: yearly
+                  value: yearly
+                - display: never
+                  value: never
+          - "@attributes": 
+              "attribute-id": siteMapIncluded
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: YES
+                  value: 1
+                - display: NO
+                  value: 0
+          - "@attributes": 
+              "attribute-id": siteMapPriority
+            "min-value": "0.0"
+            "max-value": "1.0"
+          - "@attributes": 
+              "attribute-id": template
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": type
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": visibilityMode
+            "value-definitions": 
+              "value-definition": 
+                - display: Visible
+                  value: 1
+                - display: Invisible
+                  value: 0
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": Year
+            "display-name": Year
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": body
+            "display-name": Body
+            type: html
+            "localizable-flag": true
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+          - "@attributes": 
+              "attribute-id": customCSSFile
+            "display-name": "Custom CSS File"
+            description: "Use this attribute to apply custom styles for this content asset."
+            type: image
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": Standard
+            "display-name": Standard
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": ID
+                  system: true
+              - "@attributes": 
+                  "attribute-id": name
+                  system: true
+              - "@attributes": 
+                  "attribute-id": description
+                  system: true
+              - "@attributes": 
+                  "attribute-id": onlineFlag
+                  system: true
+              - "@attributes": 
+                  "attribute-id": searchableFlag
+                  system: true
+          - "@attributes": 
+              "group-id": ExternalSearch
+            "display-name": "Search Engine Optimization Support"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": pageTitle
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageDescription
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageKeywords
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageURL
+                  system: true
+          - "@attributes": 
+              "group-id": SiteMap
+            "display-name": "Sitemap Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": siteMapIncluded
+                  system: true
+              - "@attributes": 
+                  "attribute-id": siteMapChangeFrequency
+                  system: true
+              - "@attributes": 
+                  "attribute-id": siteMapPriority
+                  system: true
+          - "@attributes": 
+              "group-id": Presentation
+            "display-name": Presentation
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": template
+                  system: true
+              - "@attributes": 
+                  "attribute-id": customCSSFile
+          - "@attributes": 
+              "group-id": Content
+            "display-name": Content
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": body
+              - "@attributes": 
+                  "attribute-id": Year
+    - "@attributes": 
+        "type-id": Coupon
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+            "field-length": 50
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": codePrefix
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": enabled
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": redemptionLimitPerCode
+          - "@attributes": 
+              "attribute-id": redemptionLimitPerCustomer
+          - "@attributes": 
+              "attribute-id": redemptionLimitPerTimeFrame
+          - "@attributes": 
+              "attribute-id": redemptionLimitTimeFrame
+          - "@attributes": 
+              "attribute-id": type
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: "Coupon with single fixed code"
+                  value: SINGLE_CODE
+                - display: "Coupon with multiple fixed codes"
+                  value: MULTIPLE_CODES
+                - display: "Coupon with system generated codes"
+                  value: SYSTEM_CODES
+    - "@attributes": 
+        "type-id": CouponLineItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": CustomerActiveData
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": avgOrderValue
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": discountValueWithCoupon
+          - "@attributes": 
+              "attribute-id": discountValueWithoutCoupon
+          - "@attributes": 
+              "attribute-id": giftOrders
+          - "@attributes": 
+              "attribute-id": giftUnits
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": lastOrderDate
+          - "@attributes": 
+              "attribute-id": orderValue
+          - "@attributes": 
+              "attribute-id": orderValueMonth
+          - "@attributes": 
+              "attribute-id": orders
+          - "@attributes": 
+              "attribute-id": productMastersOrdered
+          - "@attributes": 
+              "attribute-id": productsAbandonedMonth
+          - "@attributes": 
+              "attribute-id": productsOrdered
+          - "@attributes": 
+              "attribute-id": productsViewedMonth
+          - "@attributes": 
+              "attribute-id": returnValue
+          - "@attributes": 
+              "attribute-id": returns
+          - "@attributes": 
+              "attribute-id": sourceCodeOrders
+          - "@attributes": 
+              "attribute-id": topCategoriesOrdered
+          - "@attributes": 
+              "attribute-id": visitsMonth
+          - "@attributes": 
+              "attribute-id": visitsWeek
+          - "@attributes": 
+              "attribute-id": visitsYear
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": returnItems
+          "display-name": "Returned items"
+          description: "The number of items returned by this customer"
+          type: int
+          "mandatory-flag": false
+          "externally-managed-flag": false
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": Traffic
+            "display-name": Traffic
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": visitsWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": visitsMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": visitsYear
+                  system: true
+          - "@attributes": 
+              "group-id": Conversion
+            "display-name": Conversion
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": orders
+                  system: true
+              - "@attributes": 
+                  "attribute-id": orderValueMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": orderValue
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgOrderValue
+                  system: true
+              - "@attributes": 
+                  "attribute-id": discountValueWithoutCoupon
+                  system: true
+              - "@attributes": 
+                  "attribute-id": discountValueWithCoupon
+                  system: true
+              - "@attributes": 
+                  "attribute-id": sourceCodeOrders
+                  system: true
+              - "@attributes": 
+                  "attribute-id": lastOrderDate
+                  system: true
+          - "@attributes": 
+              "group-id": Returns
+            "display-name": Returns
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": returns
+                  system: true
+              - "@attributes": 
+                  "attribute-id": returnValue
+                  system: true
+          - "@attributes": 
+              "group-id": Gifts
+            "display-name": Gifts
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": giftOrders
+                  system: true
+              - "@attributes": 
+                  "attribute-id": giftUnits
+                  system: true
+          - "@attributes": 
+              "group-id": Products
+            "display-name": Products
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": topCategoriesOrdered
+                  system: true
+              - "@attributes": 
+                  "attribute-id": productsOrdered
+                  system: true
+              - "@attributes": 
+                  "attribute-id": productMastersOrdered
+                  system: true
+              - "@attributes": 
+                  "attribute-id": productsViewedMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": productsAbandonedMonth
+                  system: true
+    - "@attributes": 
+        "type-id": CustomerAddress
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": address1
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": address2
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": city
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": companyName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": countryCode
+            "value-definitions": 
+              "value-definition": 
+                - display: "United States"
+                  value: US
+                - display: France
+                  value: FR
+                - display: Italy
+                  value: IT
+                - display: Japan
+                  value: JP
+                - display: China
+                  value: CN
+                - display: "United Kingdom"
+                  value: GB
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": firstName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": jobTitle
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": lastName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": phone
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": postBox
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": postalCode
+            "min-length": 0
+            "field-length": 10
+          - "@attributes": 
+              "attribute-id": salutation
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": secondName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": stateCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": suffix
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": suite
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": title
+            "min-length": 0
+      "group-definitions": 
+        "attribute-group": 
+          "@attributes": 
+            "group-id": Standard
+          "display-name": "Standard Address"
+          attribute: 
+            - "@attributes": 
+                "attribute-id": ID
+                system: true
+            - "@attributes": 
+                "attribute-id": title
+                system: true
+            - "@attributes": 
+                "attribute-id": companyName
+                system: true
+            - "@attributes": 
+                "attribute-id": salutation
+                system: true
+            - "@attributes": 
+                "attribute-id": firstName
+                system: true
+            - "@attributes": 
+                "attribute-id": secondName
+                system: true
+            - "@attributes": 
+                "attribute-id": lastName
+                system: true
+            - "@attributes": 
+                "attribute-id": suffix
+                system: true
+            - "@attributes": 
+                "attribute-id": address1
+                system: true
+            - "@attributes": 
+                "attribute-id": address2
+                system: true
+            - "@attributes": 
+                "attribute-id": suite
+                system: true
+            - "@attributes": 
+                "attribute-id": postBox
+                system: true
+            - "@attributes": 
+                "attribute-id": city
+                system: true
+            - "@attributes": 
+                "attribute-id": postalCode
+                system: true
+            - "@attributes": 
+                "attribute-id": countryCode
+                system: true
+            - "@attributes": 
+                "attribute-id": stateCode
+                system: true
+            - "@attributes": 
+                "attribute-id": phone
+                system: true
+    - "@attributes": 
+        "type-id": CustomerCDPData
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": segments
+      "group-definitions": 
+        "attribute-group": 
+          "@attributes": 
+            "group-id": Segments
+          "display-name": Segments
+    - "@attributes": 
+        "type-id": CustomerGroup
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+            "field-length": 37
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+            "field-length": 100
+            "field-height": 5
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": CustomerPaymentInstrument
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": bankAccountDriversLicense
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": bankAccountDriversLicenseStateCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": bankAccountHolder
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": bankRoutingNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": creditCardExpirationMonth
+          - "@attributes": 
+              "attribute-id": creditCardExpirationYear
+          - "@attributes": 
+              "attribute-id": creditCardHolder
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creditCardIssueNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creditCardType
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creditCardValidFromMonth
+          - "@attributes": 
+              "attribute-id": creditCardValidFromYear
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": paymentMethod
+            "min-length": 0
+    - "@attributes": 
+        "type-id": Folder
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+            "field-height": 10
+          - "@attributes": 
+              "attribute-id": displayName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": online
+          - "@attributes": 
+              "attribute-id": pageDescription
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageKeywords
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageTitle
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageURL
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": siteMapChangeFrequency
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: always
+                  value: always
+                - display: hourly
+                  value: hourly
+                - display: daily
+                  value: daily
+                - display: weekly
+                  value: weekly
+                - display: monthly
+                  value: monthly
+                - display: yearly
+                  value: yearly
+                - display: never
+                  value: never
+          - "@attributes": 
+              "attribute-id": siteMapIncluded
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: YES
+                  value: 1
+                - display: NO
+                  value: 0
+          - "@attributes": 
+              "attribute-id": siteMapPriority
+            "min-value": "0.0"
+            "max-value": "1.0"
+          - "@attributes": 
+              "attribute-id": template
+            "min-length": 0
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": customCSSFile
+          "display-name": "Custom CSS File"
+          description: "Use this attribute to apply custom styles for this category."
+          type: image
+          "localizable-flag": false
+          "mandatory-flag": false
+          "externally-managed-flag": false
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": Standard
+            "display-name": Standard
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": displayName
+                  system: true
+              - "@attributes": 
+                  "attribute-id": ID
+                  system: true
+              - "@attributes": 
+                  "attribute-id": description
+                  system: true
+              - "@attributes": 
+                  "attribute-id": online
+                  system: true
+          - "@attributes": 
+              "group-id": ExternalSearch
+            "display-name": "Search Engine Optimization Support"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": pageTitle
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageDescription
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageKeywords
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageURL
+                  system: true
+          - "@attributes": 
+              "group-id": SiteMap
+            "display-name": "Sitemap Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": siteMapIncluded
+                  system: true
+              - "@attributes": 
+                  "attribute-id": siteMapChangeFrequency
+                  system: true
+              - "@attributes": 
+                  "attribute-id": siteMapPriority
+                  system: true
+          - "@attributes": 
+              "group-id": Presentation
+            "display-name": Presentation
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": template
+                  system: true
+              - "@attributes": 
+                  "attribute-id": customCSSFile
+    - "@attributes": 
+        "type-id": GiftCertificate
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": enabled
+          - "@attributes": 
+              "attribute-id": giftCertificateCode
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": merchantID
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": message
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": orderNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": recipientEmail
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": recipientName
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": senderName
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "field-length": 0
+    - "@attributes": 
+        "type-id": GiftCertificateLineItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": giftCertificateID
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": message
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": recipientEmail
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": recipientName
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": senderName
+            "min-length": 0
+            "field-length": 0
+    - "@attributes": 
+        "type-id": Invoice
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": createdBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": invoiceNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": modifiedBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: "NOT PAID"
+                  value: NOT_PAID
+                - display: MANUAL
+                  value: MANUAL
+                - display: PAID
+                  value: PAID
+                - display: FAILED
+                  value: FAILED
+          - "@attributes": 
+              "attribute-id": type
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: SHIPPING
+                  value: SHIPPING
+                - display: RETURN
+                  value: RETURN
+                - display: "RETURN CASE"
+                  value: RETURN_CASE
+                - display: APPEASEMENT
+                  value: APPEASEMENT
+    - "@attributes": 
+        "type-id": InvoiceItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": basePrice
+          - "@attributes": 
+              "attribute-id": grossPrice
+          - "@attributes": 
+              "attribute-id": invoiceNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": itemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": netPrice
+          - "@attributes": 
+              "attribute-id": orderItemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": tax
+          - "@attributes": 
+              "attribute-id": taxBasis
+    - "@attributes": 
+        "type-id": Library
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": CMSChannelID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": displayName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+      "group-definitions": 
+        "attribute-group": 
+          "@attributes": 
+            "group-id": SalesforceCMS
+          "display-name": "Salesforce CMS"
+    - "@attributes": 
+        "type-id": Order
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": affiliatePartnerID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": affiliatePartnerName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": businessType
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: B2C
+                  value: 1
+                - display: B2B
+                  value: 2
+          - "@attributes": 
+              "attribute-id": cancelCode
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: "None Specified"
+                  value: NONE_SPECIFIED
+                - display: "Wrong Size"
+                  value: WRONG_SIZE
+                - display: "Wrong Color"
+                  value: WRONG_COLOR
+          - "@attributes": 
+              "attribute-id": cancelDescription
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": channelType
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: Storefront
+                  value: 1
+                - display: "Call Center"
+                  value: 2
+                - display: Marketplace
+                  value: 3
+                - display: DSS
+                  value: 4
+                - display: Store
+                  value: 5
+                - display: Pinterest
+                  value: 6
+                - display: Twitter
+                  value: 7
+                - display: "Facebook Ads"
+                  value: 8
+                - display: Subscriptions
+                  value: 9
+                - display: "Online Reservation"
+                  value: 10
+                - display: "Customer Service Center"
+                  value: 11
+                - display: "Instagram Commerce"
+                  value: 12
+                - display: Google
+                  value: 13
+                - display: TikTok
+                  value: 14
+                - display: Snapchat
+                  value: 15
+                - display: WhatsApp
+                  value: 16
+                - display: YouTube
+                  value: 17
+          - "@attributes": 
+              "attribute-id": confirmationStatus
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NOTCONFIRMED
+                  value: 0
+                - display: CONFIRMED
+                  value: 2
+          - "@attributes": 
+              "attribute-id": createdBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": currencyCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customerEmail
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customerLocaleID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customerName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customerNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customerOrderReference
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": exportAfter
+          - "@attributes": 
+              "attribute-id": exportStatus
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NOTEXPORTED
+                  value: 0
+                - display: EXPORTED
+                  value: 1
+                - display: EXPORTREADY
+                  value: 2
+                - display: EXPORTFAILED
+                  value: 3
+          - "@attributes": 
+              "attribute-id": externalOrderNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": externalOrderStatus
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": externalOrderText
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": orderNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": originalOrderNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": paymentStatus
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NOTPAID
+                  value: 0
+                - display: PARTPAID
+                  value: 1
+                - display: PAID
+                  value: 2
+          - "@attributes": 
+              "attribute-id": replaceCode
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: "None Specified"
+                  value: NONE_SPECIFIED
+                - display: "Wrong Size"
+                  value: WRONG_SIZE
+                - display: "Wrong Color"
+                  value: WRONG_COLOR
+          - "@attributes": 
+              "attribute-id": replaceDescription
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": replacedOrderNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": replacementOrderNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": shippingStatus
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NOTSHIPPED
+                  value: 0
+                - display: PARTSHIPPED
+                  value: 1
+                - display: SHIPPED
+                  value: 2
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: CREATED
+                  value: 0
+                - display: NEW
+                  value: 3
+                - display: OPEN
+                  value: 4
+                - display: COMPLETED
+                  value: 5
+                - display: CANCELLED
+                  value: 6
+                - display: REPLACED
+                  value: 7
+                - display: FAILED
+                  value: 8
+    - "@attributes": 
+        "type-id": OrderAddress
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": address1
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": address2
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": city
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": companyName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": countryCode
+            "value-definitions": 
+              "value-definition": 
+                - display: "United States"
+                  value: US
+                - display: France
+                  value: FR
+                - display: Italy
+                  value: IT
+                - display: Japan
+                  value: JP
+                - display: China
+                  value: CN
+                - display: "United Kingdom"
+                  value: GB
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": firstName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": jobTitle
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": lastName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": phone
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": postBox
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": postalCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": salutation
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": secondName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": stateCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": suffix
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": suite
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": title
+            "min-length": 0
+      "group-definitions": 
+        "attribute-group": 
+          "@attributes": 
+            "group-id": Standard
+          "display-name": "Standard Address"
+          attribute: 
+            - "@attributes": 
+                "attribute-id": title
+                system: true
+            - "@attributes": 
+                "attribute-id": companyName
+                system: true
+            - "@attributes": 
+                "attribute-id": salutation
+                system: true
+            - "@attributes": 
+                "attribute-id": firstName
+                system: true
+            - "@attributes": 
+                "attribute-id": secondName
+                system: true
+            - "@attributes": 
+                "attribute-id": lastName
+                system: true
+            - "@attributes": 
+                "attribute-id": suffix
+                system: true
+            - "@attributes": 
+                "attribute-id": address1
+                system: true
+            - "@attributes": 
+                "attribute-id": address2
+                system: true
+            - "@attributes": 
+                "attribute-id": suite
+                system: true
+            - "@attributes": 
+                "attribute-id": postBox
+                system: true
+            - "@attributes": 
+                "attribute-id": city
+                system: true
+            - "@attributes": 
+                "attribute-id": postalCode
+                system: true
+            - "@attributes": 
+                "attribute-id": countryCode
+                system: true
+            - "@attributes": 
+                "attribute-id": stateCode
+                system: true
+            - "@attributes": 
+                "attribute-id": phone
+                system: true
+    - "@attributes": 
+        "type-id": OrderItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": itemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NEW
+                  value: NEW
+                - display: OPEN
+                  value: OPEN
+                - display: BACKORDER
+                  value: BACKORDER
+                - display: CONFIRMED
+                  value: CONFIRMED
+                - display: WAREHOUSE
+                  value: WAREHOUSE
+                - display: SHIPPED
+                  value: SHIPPED
+                - display: CANCELLED
+                  value: CANCELLED
+          - "@attributes": 
+              "attribute-id": type
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: PRODUCT
+                  value: PRODUCT
+                - display: SERVICE
+                  value: SERVICE
+    - "@attributes": 
+        "type-id": OrderPaymentInstrument
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": bankAccountDriversLicense
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": bankAccountDriversLicenseStateCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": bankAccountHolder
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": bankRoutingNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": creditCardExpirationMonth
+          - "@attributes": 
+              "attribute-id": creditCardExpirationYear
+          - "@attributes": 
+              "attribute-id": creditCardHolder
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creditCardIssueNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creditCardNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creditCardType
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creditCardValidFromMonth
+          - "@attributes": 
+              "attribute-id": creditCardValidFromYear
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": paymentMethod
+            "min-length": 0
+    - "@attributes": 
+        "type-id": OrganizationPreferences
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": Copado
+          "display-name": Copado
+          type: string
+          "mandatory-flag": false
+          "externally-managed-flag": false
+          "min-length": 0
+          "default-value": OK
+      "group-definitions": 
+        "attribute-group": 
+          "@attributes": 
+            "group-id": CopadoGlobal
+          "display-name": CopadoGlobal
+          attribute: 
+            "@attributes": 
+              "attribute-id": Copado
+    - "@attributes": 
+        "type-id": PaymentCard
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": cardType
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+          - "@attributes": 
+              "attribute-id": image
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+    - "@attributes": 
+        "type-id": PaymentMethod
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+          - "@attributes": 
+              "attribute-id": image
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+    - "@attributes": 
+        "type-id": PaymentTransaction
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": accountID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": accountType
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": transactionID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": type
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: Authorization
+                  value: TYPE_AUTH
+                - display: "Authorization Reversal"
+                  value: TYPE_AUTH_REVERSAL
+                - display: Capture
+                  value: TYPE_CAPTURE
+                - display: Credit
+                  value: TYPE_CREDIT
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": eFundsTransactionHistory
+          "display-name": "eFunds Transaction History"
+          type: "set-of-string"
+          "mandatory-flag": false
+          "externally-managed-flag": false
+      "group-definitions": 
+        "attribute-group": 
+          "@attributes": 
+            "group-id": Custom
+          "display-name": Custom
+          attribute: 
+            "@attributes": 
+              "attribute-id": eFundsTransactionHistory
+    - "@attributes": 
+        "type-id": PriceAdjustment
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": reasonCode
+            "value-definitions": 
+              "value-definition": 
+                - display: "Price Match"
+                  value: PRICE_MATCH
+                - display: Backorder
+                  value: BACKORDER
+                - display: "Even Exchange"
+                  value: EVEN_EXCHANGE
+    - "@attributes": 
+        "type-id": PriceBook
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": currencyCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": deltaFiles
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": displayName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": onlineFlag
+    - "@attributes": 
+        "type-id": Product
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": EAN
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": ID
+            "display-name": SKUAGE
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": UPC
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": brand
+            "visible-flag": true
+            "order-required-flag": false
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": facebookEnabled
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": lastModified
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": localizedTaxClassID
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": longDescription
+            "display-name": "Product Details"
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": manufacturerName
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": manufacturerSKU
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": minOrderQuantity
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": name
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": onlineFlag
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": onlineFrom
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": onlineTo
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": pageDescription
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageKeywords
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageTitle
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pageURL
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": pinterestEnabled
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": searchPlacement
+            "visible-flag": false
+            "order-required-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - display: 
+                    - "Top Featured Product"
+                    - leasdjkfdhsajk
+                  value: 8
+                - display: 
+                    - "Featured Product"
+                    - gffsdfdsgfds
+                  value: 7
+                - "@attributes": 
+                    default: true
+                  display: 
+                    - Product
+                    - gfdgdfs
+                  value: 6
+                - display: 
+                    - "Secondary Product"
+                    - fgdfsgdsf
+                  value: 5
+                - display: 
+                    - "Featured Accessory"
+                    - gfdsgsdfg
+                  value: 4
+                - display: 
+                    - Accessory
+                    - ggdsgdfs
+                  value: 3
+                - display: 
+                    - "Spare Part"
+                    - hdgfhdsfd
+                  value: 2
+                - display: 
+                    - "NLA Product"
+                    - gdsgsdgdfsgdsf
+                  value: 1
+          - "@attributes": 
+              "attribute-id": searchRank
+            "visible-flag": false
+            "order-required-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - display: High
+                  value: 3
+                - "@attributes": 
+                    default: true
+                  display: Medium
+                  value: 2
+                - display: Low
+                  value: 1
+          - "@attributes": 
+              "attribute-id": searchable
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": searchableIfUnavailable
+            "visible-flag": false
+            "order-required-flag": false
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: Yes
+                  value: Yes
+                - display: No
+                  value: No
+          - "@attributes": 
+              "attribute-id": shortDescription
+            "display-name": Description
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": siteMapChangeFrequency
+            "visible-flag": false
+            "order-required-flag": false
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: always
+                  value: always
+                - display: hourly
+                  value: hourly
+                - display: daily
+                  value: daily
+                - display: weekly
+                  value: weekly
+                - display: monthly
+                  value: monthly
+                - display: yearly
+                  value: yearly
+                - display: never
+                  value: never
+          - "@attributes": 
+              "attribute-id": siteMapIncluded
+            "visible-flag": false
+            "order-required-flag": false
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: YES
+                  value: 1
+                - display: NO
+                  value: 0
+          - "@attributes": 
+              "attribute-id": siteMapPriority
+            "visible-flag": false
+            "order-required-flag": false
+            "min-value": "0.0"
+            "max-value": "1.0"
+          - "@attributes": 
+              "attribute-id": stepQuantity
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": storeForcePriceEnabled
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": storeNonDiscountableEnabled
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": storeNonInventoryEnabled
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": storeNonRevenueEnabled
+            "visible-flag": false
+            "order-required-flag": false
+          - "@attributes": 
+              "attribute-id": storeReceiptName
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": storeTaxClass
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": taxClassID
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": template
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": unit
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": unitMeasure
+            "visible-flag": false
+            "order-required-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": unitQuantity
+            "visible-flag": false
+            "order-required-flag": false
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": availableForInStorePickup
+            "display-name": "Available for In Store Pickup"
+            description: "Signals if there are inventory lists for brick-and-mortar stores associated with this product."
+            type: boolean
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+          - "@attributes": 
+              "attribute-id": batteryLife
+            "display-name": "Battery Life"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": batteryType
+            "display-name": "Battery Type"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": bootType
+            "display-name": "Boot Type"
+            description: "Type of Boot for search refinement."
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: Winter
+                  value: 0010
+                - display: Waterproof
+                  value: 0020
+                - display: Classic
+                  value: 0030
+                - display: "Ankle \x26 Mid"
+                  value: 0040
+                - display: Tall
+                  value: 0050
+                - display: "6\x22"
+                  value: 0060
+                - display: Casual
+                  value: 0070
+          - "@attributes": 
+              "attribute-id": bottomType
+            "display-name": "Bottom Type"
+            description: "Bottom type for search refinement"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: Khakis
+                  value: 0010
+                - display: Denim
+                  value: 0020
+                - display: Dress
+                  value: 0030
+                - display: Casual
+                  value: 0040
+                - display: Shorts
+                  value: 0050
+                - display: Work
+                  value: 0060
+                - display: Cargo
+                  value: 0070
+                - display: Fleece
+                  value: 0080
+          - "@attributes": 
+              "attribute-id": color
+            "display-name": Color
+            description: "Product color used for variation attribute"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": consoleWarranty
+            "display-name": "Extended Warranty"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": customCSSFile
+            "display-name": "Custom CSS File"
+            description: "Use this attribute to apply custom styles for this product."
+            type: image
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+          - "@attributes": 
+              "attribute-id": digitalCameraFeatures
+            "display-name": "Digital Camera Features"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: "Built In Flash"
+                  value: 0010
+                - display: "HD Video"
+                  value: 0020
+                - display: "GPS Geo Tagging"
+                  value: 0030
+                - display: "Variable Self Timer"
+                  value: 0040
+                - display: "Image Optimizer"
+                  value: 0050
+                - display: "Stop Motion Video"
+                  value: 0060
+                - display: "Self Cleaning"
+                  value: 0070
+                - display: "Pro Performance"
+                  value: 0080
+                - display: "51 Area Autofocus"
+                  value: 0090
+                - display: "Super Fast Startup"
+                  value: 0100
+                - display: "Easy to Learn"
+                  value: 0110
+                - display: "Wide Angle Optical Zoom"
+                  value: 0120
+                - display: "Manual Controls"
+                  value: 0130
+                - display: "Wired LAN"
+                  value: 0140
+                - display: "GPS Enabled"
+                  value: 0150
+                - display: "In Camera Red Eye Reduction"
+                  value: 0160
+                - display: "Large LCD"
+                  value: 0170
+                - display: "Optical Zoom"
+                  value: 0180
+                - display: "Anti-Shake"
+                  value: 0190
+                - display: "Touch Screen"
+                  value: 0200
+                - display: "Image Stabilization"
+                  value: 0210
+                - display: "Fast Shutter"
+                  value: 0220
+                - display: Slim
+                  value: 0230
+                - display: "35mm Full Frame Sensor"
+                  value: 0240
+                - display: "Wide Angle\x7CContinuous Shooting"
+                  value: 0250
+                - display: "Continuous Shooting"
+                  value: 0260
+                - display: "ISO 1600"
+                  value: 0270
+                - display: "Red Eye Reduction"
+                  value: 0280
+          - "@attributes": 
+              "attribute-id": digitalCameraPixels
+            "display-name": "Digital Camera Pixels"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": digitalCameraType
+            "display-name": "Digital Camera Type"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": digitalCameraWarranty
+            "display-name": "Extended Warranty"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": dimDepth
+            "display-name": Depth
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": dimHeight
+            "display-name": Height
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": dimWeight
+            "display-name": Weight
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": dimWidth
+            "display-name": Width
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": displaySize
+            "display-name": "Display Size"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": gameGenre
+            "display-name": Genre
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: Action
+                  value: Action
+                - display: Educational
+                  value: Educational
+                - display: Kids
+                  value: Kids
+                - display: Racing
+                  value: Racing
+                - display: "Role-Playing"
+                  value: "Role-Playing"
+                - display: Sports
+                  value: Sports
+                - display: Strategy
+                  value: Strategy
+          - "@attributes": 
+              "attribute-id": gameRating
+            "display-name": "Game Rating"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": gameSystemType
+            "display-name": "Gaming System"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": gpsFeatures
+            "display-name": "GPS Features"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: Preloaded
+                  value: 0010
+                - display: "Voice Prompts"
+                  value: 0020
+                - display: 3D
+                  value: 0030
+                - display: "Touch Screen"
+                  value: 0040
+                - display: "FM Traffic"
+                  value: 0050
+                - display: "MSN Direct"
+                  value: 0060
+                - display: "MP3 Player"
+                  value: 0070
+                - display: "Picture Viewer"
+                  value: 0080
+                - display: "Bluetooth\xAE"
+                  value: 0090
+                - display: "Speech Recognition"
+                  value: 0100
+                - display: "XM Navtraffic"
+                  value: 0110
+                - display: Waterproof
+                  value: 0120
+                - display: "Motorcycle Ready"
+                  value: 0130
+                - display: "Lunar Tracking"
+                  value: 0140
+                - display: "Wrist Wear"
+                  value: 0150
+                - display: Barometer
+                  value: 0160
+                - display: Compass
+                  value: 0170
+                - display: Geocaching
+                  value: 0180
+                - display: "Jeppesen Enabled"
+                  value: 0190
+                - display: "Built-in HIS"
+                  value: 0200
+                - display: "Auto Logbook"
+                  value: 0210
+                - display: "Automotive Friendly"
+                  value: 0230
+          - "@attributes": 
+              "attribute-id": gpsType
+            "display-name": "GPS Type"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: Automotive
+                  value: 0010
+                - display: Personal
+                  value: 0020
+                - display: Outdoor
+                  value: 0030
+                - display: Aviation
+                  value: 0040
+          - "@attributes": 
+              "attribute-id": gpsWarranty
+            "display-name": "Extended Warranty"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": imageAspectRatio
+            "display-name": "Image Aspect Ratio"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": isNew
+            "display-name": "New Arrival\x3F"
+            type: boolean
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+          - "@attributes": 
+              "attribute-id": isNewtest
+            "display-name": "New Arrival\x3F"
+            description: "This indiciates if the product is a new arrival."
+            type: boolean
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+          - "@attributes": 
+              "attribute-id": isSale
+            "display-name": "On sale\x3F"
+            description: "This is the help text. It is used for sorting rules."
+            type: boolean
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+          - "@attributes": 
+              "attribute-id": kidsAge
+            "display-name": Age
+            description: "Kids Age used for search refinements"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: "Infant \x280-1 yr\x29"
+                  value: 0010
+                - display: "Toddler \x281-5 yrs\x29"
+                  value: 0020
+                - display: "Youth \x285-9 yrs\x29"
+                  value: 0030
+                - display: "Junior \x289-12 yrs\x29"
+                  value: 0040
+                - display: "Newborn \x281-6 mths\x29"
+                  value: 0050
+                - display: "Infant \x289 mnths - 3 yrs\x29"
+                  value: 0060
+                - display: "Junior \x284-12 yrs\x29"
+                  value: 0070
+          - "@attributes": 
+              "attribute-id": length
+            "display-name": Length
+            description: "This attribute is used for mens and womens pants lengths."
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lensAperture
+            "display-name": "Lens Aperture"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": materialTest
+            "display-name": Material
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: Cotton
+                  value: cotton
+                - display: Wool
+                  value: wool
+                - display: Polyester
+                  value: polyester
+          - "@attributes": 
+              "attribute-id": mediaFormat
+            "display-name": "Media Format"
+            description: "Media Format"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: MP3
+                  value: 0010
+                - display: WMA
+                  value: 0020
+                - display: JPEG
+                  value: 0030
+                - display: WAV
+                  value: 0040
+                - display: "FM Tuner"
+                  value: 0050
+                - display: AAC
+                  value: 0060
+                - display: WMP
+                  value: 0070
+                - display: MPEG4
+                  value: 0080
+                - display: AVC
+                  value: 0090
+                - display: ASP
+                  value: 0100
+          - "@attributes": 
+              "attribute-id": memorySize
+            "display-name": "Memory Size"
+            description: "Memory Size"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": memoryType
+            "display-name": "Memory Type"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: SD
+                  value: 0010
+                - display: "Memory Stick Pro DUO"
+                  value: 0020
+                - display: "Compact Flash"
+                  value: 0030
+                - display: MMC
+                  value: 0040
+                - display: SDHC
+                  value: 0050
+                - display: "CF Card"
+                  value: 0060
+                - display: "External Media"
+                  value: 0070
+                - display: "Micro SD"
+                  value: 0080
+                - display: "Garmin Data Card"
+                  value: 0090
+          - "@attributes": 
+              "attribute-id": musicStorage
+            "display-name": "Music Storage"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": opticalZoom
+            "display-name": "Optical Zoom"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": outerwearType
+            "display-name": "Outerwear Type"
+            description: "Type of Outerwear for search refinement"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - display: Waterproof
+                  value: 0010
+                - display: Jackets
+                  value: 0020
+                - display: Vest
+                  value: 0030
+                - display: Pants
+                  value: 0040
+                - display: Casual
+                  value: 0050
+                - display: Sweater
+                  value: 0060
+                - display: Outdoor
+                  value: 0070
+                - display: Fleece
+                  value: 0080
+          - "@attributes": 
+              "attribute-id": portableAudioType
+            "display-name": "Portable Audio Type"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: Audio
+                  value: 0010
+                - display: Video
+                  value: 0020
+                - display: Internet
+                  value: 0030
+          - "@attributes": 
+              "attribute-id": refinementColor
+            "display-name": "Refinement Color"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - display: Black
+                  value: black
+                - display: Blue
+                  value: blue
+                - display: Green
+                  value: green
+                - display: Red
+                  value: red
+                - display: Orange
+                  value: orange
+                - display: Pink
+                  value: pink
+                - display: Purple
+                  value: purple
+                - display: White
+                  value: white
+                - display: Yellow
+                  value: yellow
+                - display: Grey
+                  value: grey
+                - display: Beige
+                  value: beige
+                - display: Miscellaneous
+                  value: miscellaneous
+                - display: Brown
+                  value: brown
+                - display: Navy
+                  value: navy
+          - "@attributes": 
+              "attribute-id": resolution
+            "display-name": Resolution
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": sandalType
+            "display-name": "Sandal Type"
+            description: "Type of Sandal for search refinement"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: Sport
+                  value: 0010
+                - display: Casual
+                  value: 0020
+                - display: Thong
+                  value: 0030
+          - "@attributes": 
+              "attribute-id": sheets
+            "display-name": Sheets
+            description: "test attribute"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: "Value 1"
+                  value: value1
+                - display: "Value 2"
+                  value: value2
+                - display: "Value 3"
+                  value: value3
+          - "@attributes": 
+              "attribute-id": shoeType
+            "display-name": "Shoe Type"
+            description: "Type of Shoe for search refinements"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - display: Chukka
+                  value: 0010
+                - display: "Lace Up"
+                  value: 0020
+                - display: "Slip On"
+                  value: 0030
+                - display: Clog
+                  value: 0040
+                - display: Boat
+                  value: 0050
+                - display: Oxford
+                  value: 0060
+                - "@attributes": 
+                    default: true
+                  display: Loafer
+                  value: 0070
+                - display: Waterproof
+                  value: 0080
+                - display: Flats
+                  value: 0090
+                - display: Ballerina
+                  value: 0100
+                - display: Heeled
+                  value: 0110
+          - "@attributes": 
+              "attribute-id": size
+            "display-name": Size
+            description: "This attribute is used for all footwear\x2C apparel and accessory sizing for men\x2C women and kids products."
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": skinConcern
+            "display-name": "Skin Concern"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "select-multiple-flag": true
+            "value-definitions": 
+              "value-definition": 
+                - display: "Dry\x2C Tight Skin"
+                  value: dryTight
+                - display: "Comprehensive Protection"
+                  value: comprehensive
+                - display: "Lifting \x26 Loss of Firmness"
+                  value: liftingLossFirm
+          - "@attributes": 
+              "attribute-id": styleNumber
+            "display-name": "Style Number"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+            unit: 10
+          - "@attributes": 
+              "attribute-id": tabDescription
+            "display-name": Description
+            type: html
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+          - "@attributes": 
+              "attribute-id": tabDetails
+            "display-name": Details
+            type: html
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+          - "@attributes": 
+              "attribute-id": topType
+            "display-name": "Top Type"
+            description: "Type of tops in clothing"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+          - "@attributes": 
+              "attribute-id": tvSignalFormat
+            "display-name": "TV Signal Format"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": tvSize
+            "display-name": Size
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": tvType
+            "display-name": "TV Type"
+            type: "enum-of-string"
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - display: Plasma
+                  value: 0010
+                - display: LCD
+                  value: 0020
+                - display: DLP
+                  value: 0030
+                - display: Projection
+                  value: 0040
+          - "@attributes": 
+              "attribute-id": tvWarranty
+            "display-name": "Extended Warranty"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": videoStorage
+            "display-name": "Video Storage"
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": true
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": waist
+            "display-name": Waist
+            description: "Attribute used for apparel waist sizing."
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": width
+            "display-name": Width
+            description: "This attribute is used for shoe widths for mens\x2C womens and kids."
+            type: string
+            "localizable-flag": false
+            "site-specific-flag": false
+            "mandatory-flag": false
+            "visible-flag": false
+            "externally-managed-flag": false
+            "order-required-flag": false
+            "externally-defined-flag": false
+            "min-length": 0
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": ExternalSearch
+            "display-name": "Search Engine Optimization Support"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": pageTitle
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageDescription
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageKeywords
+                  system: true
+              - "@attributes": 
+                  "attribute-id": pageURL
+                  system: true
+          - "@attributes": 
+              "group-id": SiteMap
+            "display-name": "Sitemap Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": siteMapIncluded
+                  system: true
+              - "@attributes": 
+                  "attribute-id": siteMapChangeFrequency
+                  system: true
+              - "@attributes": 
+                  "attribute-id": siteMapPriority
+                  system: true
+          - "@attributes": 
+              "group-id": Presentation
+            "display-name": "Presentation Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": thumbnail
+                  system: true
+              - "@attributes": 
+                  "attribute-id": image
+                  system: true
+              - "@attributes": 
+                  "attribute-id": template
+                  system: true
+              - "@attributes": 
+                  "attribute-id": customCSSFile
+          - "@attributes": 
+              "group-id": SearchRanking
+            "display-name": "Search Ranking"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": searchPlacement
+                  system: true
+              - "@attributes": 
+                  "attribute-id": searchRank
+                  system: true
+          - "@attributes": 
+              "group-id": Order
+            "display-name": "Order Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": unit
+                  system: true
+              - "@attributes": 
+                  "attribute-id": minOrderQuantity
+                  system: true
+              - "@attributes": 
+                  "attribute-id": stepQuantity
+                  system: true
+              - "@attributes": 
+                  "attribute-id": taxClassID
+                  system: true
+              - "@attributes": 
+                  "attribute-id": EAN
+                  system: true
+              - "@attributes": 
+                  "attribute-id": UPC
+                  system: true
+              - "@attributes": 
+                  "attribute-id": localizedTaxClassID
+                  system: true
+              - "@attributes": 
+                  "attribute-id": unitQuantity
+                  system: true
+              - "@attributes": 
+                  "attribute-id": unitMeasure
+                  system: true
+          - "@attributes": 
+              "group-id": Store
+            "display-name": "Store Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": storeNonDiscountableEnabled
+                  system: true
+              - "@attributes": 
+                  "attribute-id": storeTaxClass
+                  system: true
+              - "@attributes": 
+                  "attribute-id": storeNonRevenueEnabled
+                  system: true
+              - "@attributes": 
+                  "attribute-id": storeNonInventoryEnabled
+                  system: true
+              - "@attributes": 
+                  "attribute-id": storeReceiptName
+                  system: true
+              - "@attributes": 
+                  "attribute-id": storeForcePriceEnabled
+                  system: true
+          - "@attributes": 
+              "group-id": ChannelIntegration
+            "display-name": "Channel Integration Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": pinterestEnabled
+                  system: true
+              - "@attributes": 
+                  "attribute-id": facebookEnabled
+                  system: true
+          - "@attributes": 
+              "group-id": inStorePickup
+            "display-name": "In Store Pickup"
+            attribute: 
+              "@attributes": 
+                "attribute-id": availableForInStorePickup
+          - "@attributes": 
+              "group-id": storefrontAttributes
+            "display-name": "Storefront Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": tabDescription
+              - "@attributes": 
+                  "attribute-id": tabDetails
+              - "@attributes": 
+                  "attribute-id": refinementColor
+          - "@attributes": 
+              "group-id": searchRefinements
+            "display-name": "Search Refinements"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": skinConcern
+              - "@attributes": 
+                  "attribute-id": isNewtest
+              - "@attributes": 
+                  "attribute-id": sheets
+              - "@attributes": 
+                  "attribute-id": isSale
+    - "@attributes": 
+        "type-id": ProductActiveData
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": availableDate
+          - "@attributes": 
+              "attribute-id": avgGrossMarginPercentDay
+          - "@attributes": 
+              "attribute-id": avgGrossMarginPercentMonth
+          - "@attributes": 
+              "attribute-id": avgGrossMarginPercentWeek
+          - "@attributes": 
+              "attribute-id": avgGrossMarginPercentYear
+          - "@attributes": 
+              "attribute-id": avgGrossMarginValueDay
+          - "@attributes": 
+              "attribute-id": avgGrossMarginValueMonth
+          - "@attributes": 
+              "attribute-id": avgGrossMarginValueWeek
+          - "@attributes": 
+              "attribute-id": avgGrossMarginValueYear
+          - "@attributes": 
+              "attribute-id": avgSalesPriceDay
+          - "@attributes": 
+              "attribute-id": avgSalesPriceMonth
+          - "@attributes": 
+              "attribute-id": avgSalesPriceWeek
+          - "@attributes": 
+              "attribute-id": avgSalesPriceYear
+          - "@attributes": 
+              "attribute-id": conversionDay
+          - "@attributes": 
+              "attribute-id": conversionMonth
+          - "@attributes": 
+              "attribute-id": conversionWeek
+          - "@attributes": 
+              "attribute-id": conversionYear
+          - "@attributes": 
+              "attribute-id": costPrice
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": daysAvailable
+          - "@attributes": 
+              "attribute-id": impressionsDay
+          - "@attributes": 
+              "attribute-id": impressionsMonth
+          - "@attributes": 
+              "attribute-id": impressionsWeek
+          - "@attributes": 
+              "attribute-id": impressionsYear
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": lookToBookRatioDay
+          - "@attributes": 
+              "attribute-id": lookToBookRatioMonth
+          - "@attributes": 
+              "attribute-id": lookToBookRatioWeek
+          - "@attributes": 
+              "attribute-id": lookToBookRatioYear
+          - "@attributes": 
+              "attribute-id": ordersDay
+          - "@attributes": 
+              "attribute-id": ordersMonth
+          - "@attributes": 
+              "attribute-id": ordersWeek
+          - "@attributes": 
+              "attribute-id": ordersYear
+          - "@attributes": 
+              "attribute-id": returnRate
+          - "@attributes": 
+              "attribute-id": revenueDay
+          - "@attributes": 
+              "attribute-id": revenueMonth
+          - "@attributes": 
+              "attribute-id": revenueWeek
+          - "@attributes": 
+              "attribute-id": revenueYear
+          - "@attributes": 
+              "attribute-id": salesVelocityDay
+          - "@attributes": 
+              "attribute-id": salesVelocityMonth
+          - "@attributes": 
+              "attribute-id": salesVelocityWeek
+          - "@attributes": 
+              "attribute-id": salesVelocityYear
+          - "@attributes": 
+              "attribute-id": unitsDay
+          - "@attributes": 
+              "attribute-id": unitsMonth
+          - "@attributes": 
+              "attribute-id": unitsWeek
+          - "@attributes": 
+              "attribute-id": unitsYear
+          - "@attributes": 
+              "attribute-id": viewsDay
+          - "@attributes": 
+              "attribute-id": viewsMonth
+          - "@attributes": 
+              "attribute-id": viewsWeek
+          - "@attributes": 
+              "attribute-id": viewsYear
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": Traffic
+            "display-name": Traffic
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": impressionsDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": impressionsWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": impressionsMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": impressionsYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": viewsDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": viewsWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": viewsMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": viewsYear
+                  system: true
+          - "@attributes": 
+              "group-id": Conversion
+            "display-name": Conversion
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": conversionDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": conversionWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": conversionMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": conversionYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": ordersDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": ordersWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": ordersMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": ordersYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": unitsDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": unitsWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": unitsMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": unitsYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": revenueDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": revenueWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": revenueMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": revenueYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": lookToBookRatioDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": lookToBookRatioWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": lookToBookRatioMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": lookToBookRatioYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": salesVelocityDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": salesVelocityWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": salesVelocityMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": salesVelocityYear
+                  system: true
+          - "@attributes": 
+              "group-id": PricesAndRates
+            "display-name": "Prices \x26 Rates"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": costPrice
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgSalesPriceDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgSalesPriceWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgSalesPriceMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgSalesPriceYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgGrossMarginValueDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgGrossMarginValueWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgGrossMarginValueMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgGrossMarginValueYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgGrossMarginPercentDay
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgGrossMarginPercentWeek
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgGrossMarginPercentMonth
+                  system: true
+              - "@attributes": 
+                  "attribute-id": avgGrossMarginPercentYear
+                  system: true
+              - "@attributes": 
+                  "attribute-id": returnRate
+                  system: true
+          - "@attributes": 
+              "group-id": Freshness
+            "display-name": Freshness
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": availableDate
+                  system: true
+              - "@attributes": 
+                  "attribute-id": daysAvailable
+                  system: true
+    - "@attributes": 
+        "type-id": ProductInventoryList
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": ProductInventoryRecord
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": ProductLineItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": externalLineItemStatus
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": externalLineItemText
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": gift
+          - "@attributes": 
+              "attribute-id": giftMessage
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": bonusProductLineItemUUID
+            "display-name": "Bonus Product Line Item UUID"
+            description: "This represents the UUID of the product line item that holds the qualifying product."
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": fromStoreId
+            "display-name": "From Store ID"
+            description: "Links the store to the product line item for grouping shipments in the checkout process."
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": preOrderUUID
+            "display-name": "pre order uuid"
+            description: "this custom attribute captures the original product line item uuid before it is part of an placed order"
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+    - "@attributes": 
+        "type-id": ProductList
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": anonymous
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": eventCity
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": eventCountry
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": eventDate
+          - "@attributes": 
+              "attribute-id": eventState
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": eventType
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": exportStatus
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NOTEXPORTED
+                  value: 0
+                - display: EXPORTED
+                  value: 1
+          - "@attributes": 
+              "attribute-id": lastExportTime
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": public
+          - "@attributes": 
+              "attribute-id": type
+    - "@attributes": 
+        "type-id": ProductListItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": priority
+          - "@attributes": 
+              "attribute-id": productID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": public
+          - "@attributes": 
+              "attribute-id": type
+    - "@attributes": 
+        "type-id": ProductListItemPurchase
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": ProductListRegistrant
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": Profile
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": birthday
+          - "@attributes": 
+              "attribute-id": companyName
+            "min-length": 0
+            "field-length": 10
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": customerNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": email
+            "field-length": 75
+          - "@attributes": 
+              "attribute-id": fax
+            "min-length": 0
+            "field-length": 32
+          - "@attributes": 
+              "attribute-id": firstName
+            "min-length": 0
+            "field-length": 25
+          - "@attributes": 
+              "attribute-id": gender
+            "value-definitions": 
+              "value-definition": 
+                - display: Male
+                  value: 1
+                - display: Female
+                  value: 2
+          - "@attributes": 
+              "attribute-id": jobTitle
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastLoginTime
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": lastName
+            "min-length": 0
+            "field-length": 25
+          - "@attributes": 
+              "attribute-id": lastVisitTime
+          - "@attributes": 
+              "attribute-id": nextBirthday
+          - "@attributes": 
+              "attribute-id": phoneBusiness
+            "min-length": 0
+            "field-length": 32
+          - "@attributes": 
+              "attribute-id": phoneHome
+            "min-length": 0
+            "field-length": 32
+          - "@attributes": 
+              "attribute-id": phoneMobile
+            "min-length": 0
+            "field-length": 32
+          - "@attributes": 
+              "attribute-id": preferredLocale
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": salutation
+            "min-length": 0
+            "field-length": 5
+          - "@attributes": 
+              "attribute-id": secondName
+            "min-length": 0
+            "field-length": 25
+          - "@attributes": 
+              "attribute-id": suffix
+            "min-length": 0
+            "field-length": 5
+          - "@attributes": 
+              "attribute-id": taxID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": taxIDType
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: Arbitrary
+                  value: Arbitrary
+                - display: CPF
+                  value: CPF
+          - "@attributes": 
+              "attribute-id": title
+            "min-length": 0
+            "field-length": 10
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          "@attributes": 
+            "attribute-id": familyStatus
+          "display-name": "Family Status"
+          type: "enum-of-string"
+          "mandatory-flag": false
+          "externally-managed-flag": false
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": Standard
+            "display-name": "Profile Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": salutation
+                  system: true
+              - "@attributes": 
+                  "attribute-id": title
+                  system: true
+              - "@attributes": 
+                  "attribute-id": companyName
+                  system: true
+              - "@attributes": 
+                  "attribute-id": jobTitle
+                  system: true
+              - "@attributes": 
+                  "attribute-id": firstName
+                  system: true
+              - "@attributes": 
+                  "attribute-id": lastName
+                  system: true
+              - "@attributes": 
+                  "attribute-id": suffix
+                  system: true
+              - "@attributes": 
+                  "attribute-id": gender
+                  system: true
+              - "@attributes": 
+                  "attribute-id": birthday
+                  system: true
+              - "@attributes": 
+                  "attribute-id": email
+                  system: true
+              - "@attributes": 
+                  "attribute-id": nextBirthday
+                  system: true
+              - "@attributes": 
+                  "attribute-id": secondName
+                  system: true
+          - "@attributes": 
+              "group-id": Phone
+            "display-name": "Phone Numbers"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": phoneHome
+                  system: true
+              - "@attributes": 
+                  "attribute-id": phoneBusiness
+                  system: true
+              - "@attributes": 
+                  "attribute-id": phoneMobile
+                  system: true
+              - "@attributes": 
+                  "attribute-id": fax
+                  system: true
+    - "@attributes": 
+        "type-id": Promotion
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+            "field-length": 50
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": calloutMsg
+            "field-height": 3
+          - "@attributes": 
+              "attribute-id": combinablePromotions
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": details
+            "field-height": 3
+          - "@attributes": 
+              "attribute-id": exclusivity
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: "Can be combined with any promotion."
+                  value: NO
+                - display: "Can\x27t be combined with promotions of the same class."
+                  value: CLASS
+                - display: "Can\x27t be combined with any promotion."
+                  value: GLOBAL
+          - "@attributes": 
+              "attribute-id": image
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": mutuallyExclusivePromotions
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": rank
+            "value-definitions": 
+              "value-definition": 
+                - value: 10
+                - value: 20
+                - value: 30
+                - value: 40
+                - "@attributes": 
+                    default: true
+                  value: 50
+                - value: 60
+                - value: 70
+                - value: 80
+                - value: 90
+                - value: 100
+          - "@attributes": 
+              "attribute-id": tags
+    - "@attributes": 
+        "type-id": Recommendation
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": calloutMsg
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": image
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": longDescription
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": recommendationType
+            "value-definitions": 
+              "value-definition": 
+                - display: "Product Detail Page - Cross Sell"
+                  value: 1
+                - display: "Category Landing Page - Featured Items"
+                  value: 2
+                - display: Other
+                  value: 3
+          - "@attributes": 
+              "attribute-id": shortDescription
+    - "@attributes": 
+        "type-id": Return
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": createdBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": invoiceNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": modifiedBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": note
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": returnNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NEW
+                  value: NEW
+                - display: COMPLETED
+                  value: COMPLETED
+    - "@attributes": 
+        "type-id": ReturnCase
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": RMA
+          - "@attributes": 
+              "attribute-id": createdBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": invoiceNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": modifiedBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": returnCaseNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NEW
+                  value: NEW
+                - display: CONFIRMED
+                  value: CONFIRMED
+                - display: PARTIAL_RETURNED
+                  value: PARTIAL_RETURNED
+                - display: RETURNED
+                  value: RETURNED
+                - display: CANCELLED
+                  value: CANCELLED
+    - "@attributes": 
+        "type-id": ReturnCaseItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": authorizedQuantity
+          - "@attributes": 
+              "attribute-id": basePrice
+          - "@attributes": 
+              "attribute-id": grossPrice
+          - "@attributes": 
+              "attribute-id": itemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": netPrice
+          - "@attributes": 
+              "attribute-id": note
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": orderItemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": reasonCode
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: "None Specified"
+                  value: NONE_SPECIFIED
+                - display: "Wrong Size"
+                  value: WRONG_SIZE
+                - display: "Wrong Color"
+                  value: WRONG_COLOR
+          - "@attributes": 
+              "attribute-id": returnCaseNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NEW
+                  value: NEW
+                - display: CONFIRMED
+                  value: CONFIRMED
+                - display: PARTIAL_RETURNED
+                  value: PARTIAL_RETURNED
+                - display: RETURNED
+                  value: RETURNED
+                - display: CANCELLED
+                  value: CANCELLED
+          - "@attributes": 
+              "attribute-id": tax
+          - "@attributes": 
+              "attribute-id": taxBasis
+    - "@attributes": 
+        "type-id": ReturnItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": basePrice
+          - "@attributes": 
+              "attribute-id": grossPrice
+          - "@attributes": 
+              "attribute-id": itemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": netPrice
+          - "@attributes": 
+              "attribute-id": note
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": orderItemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": reasonCode
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: "None Specified"
+                  value: NONE_SPECIFIED
+                - display: "Wrong Size"
+                  value: WRONG_SIZE
+                - display: "Wrong Color"
+                  value: WRONG_COLOR
+          - "@attributes": 
+              "attribute-id": returnNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": returnedQuantity
+          - "@attributes": 
+              "attribute-id": tax
+          - "@attributes": 
+              "attribute-id": taxBasis
+    - "@attributes": 
+        "type-id": ServiceConfig
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": serviceType
+            "min-length": 0
+    - "@attributes": 
+        "type-id": ServiceCredential
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": URL
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": password
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": user
+            "min-length": 0
+    - "@attributes": 
+        "type-id": ServiceProfile
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": cbCalls
+          - "@attributes": 
+              "attribute-id": cbMillis
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": rateLimitCalls
+          - "@attributes": 
+              "attribute-id": rateLimitMillis
+          - "@attributes": 
+              "attribute-id": timeoutMillis
+    - "@attributes": 
+        "type-id": Shipment
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": gift
+          - "@attributes": 
+              "attribute-id": giftMessage
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": shipmentNo
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": shippingStatus
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: NOTSHIPPED
+                  value: 0
+                - display: SHIPPED
+                  value: 2
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": fromStoreId
+            "display-name": "Pickup Store ID"
+            description: "Used to map the shipment to a  brick and mortar store."
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+            "field-length": 0
+          - "@attributes": 
+              "attribute-id": shipmentType
+            "display-name": "When this attribute equals \x27instore\x27\x2C the checkout flow will assign the shipping method \x28005\x29 which has a no shipping charge."
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": storePickupMessage
+            "display-name": "Store Pickup Message"
+            description: "This is text used by the end user when sending a message to the brick and mortar store about the shipment.  This is reflected in the order export."
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+            "field-length": 0
+      "group-definitions": 
+        "attribute-group": 
+          "@attributes": 
+            "group-id": storepickup
+          "display-name": "Store Pickup Information"
+          attribute: 
+            - "@attributes": 
+                "attribute-id": fromStoreId
+            - "@attributes": 
+                "attribute-id": storePickupMessage
+    - "@attributes": 
+        "type-id": ShippingLineItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": ShippingMethod
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": description
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": displayName
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": taxClassID
+            "min-length": 0
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": estimatedArrivalTime
+            "display-name": "Estimated Arrival Time"
+            description: "Estimated days until delivery"
+            type: string
+            "localizable-flag": true
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": storePickupEnabled
+            "display-name": "Store Pickup Enabled"
+            type: boolean
+            "mandatory-flag": true
+            "externally-managed-flag": false
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": storePickUp
+            "display-name": "Store Pick Up"
+            attribute: 
+              "@attributes": 
+                "attribute-id": storePickupEnabled
+          - "@attributes": 
+              "group-id": shippingMethodAttr
+            "display-name": "Shipping Method Attributes"
+            attribute: 
+              "@attributes": 
+                "attribute-id": estimatedArrivalTime
+    - "@attributes": 
+        "type-id": ShippingOrder
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": createdBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": invoiceNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": modifiedBy
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": shippingOrderNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: CONFIRMED
+                  value: CONFIRMED
+                - display: WAREHOUSE
+                  value: WAREHOUSE
+                - display: SHIPPED
+                  value: SHIPPED
+                - display: CANCELLED
+                  value: CANCELLED
+    - "@attributes": 
+        "type-id": ShippingOrderItem
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": basePrice
+          - "@attributes": 
+              "attribute-id": grossPrice
+          - "@attributes": 
+              "attribute-id": itemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": netPrice
+          - "@attributes": 
+              "attribute-id": orderItemID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": quantity
+          - "@attributes": 
+              "attribute-id": shippingOrderNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": status
+            "value-definitions": 
+              "@attributes": 
+                immutable: true
+              "value-definition": 
+                - display: CONFIRMED
+                  value: CONFIRMED
+                - display: WAREHOUSE
+                  value: WAREHOUSE
+                - display: SHIPPED
+                  value: SHIPPED
+                - display: CANCELLED
+                  value: CANCELLED
+          - "@attributes": 
+              "attribute-id": tax
+          - "@attributes": 
+              "attribute-id": taxBasis
+    - "@attributes": 
+        "type-id": SitePreferences
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": Copado
+            "display-name": Copado
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+            "default-value": OK
+          - "@attributes": 
+              "attribute-id": GoogleVerificationTag
+            "display-name": "GoogleVerificationTag - Content Attribute"
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": checkTLS
+            "display-name": "Check TLS"
+            description: "When true\x2C this causes a TLS check to take place based on whether or not a cookie \x28\x27dw_TLSWarning\x27\x29 has been set on the browser"
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": false
+          - "@attributes": 
+              "attribute-id": countryCode
+            "display-name": "Default Country Code"
+            description: "Default country code for store searches"
+            type: "enum-of-string"
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - "@attributes": 
+                    default: true
+                  display: USA
+                  value: US
+                - display: CANADA
+                  value: CA
+                - display: UK
+                  value: UK
+          - "@attributes": 
+              "attribute-id": customerServiceEmail
+            "display-name": "Customer Service Email"
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+            "field-length": 0
+            "default-value": "no-reply@testorganization.com"
+          - "@attributes": 
+              "attribute-id": disableResponsiveDesign
+            "display-name": "Disable Responsive Design"
+            description: "Disable Responsive Design for Storefront"
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": false
+          - "@attributes": 
+              "attribute-id": enableInfiniteScroll
+            "display-name": "Enable Infinite Scroll"
+            description: "This Boolean toggles the option for infinite scrolling or pagination from within the search grid."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": false
+          - "@attributes": 
+              "attribute-id": enableMultiShipping
+            "display-name": "Enable MultiShipping"
+            description: "The attribute is used to enable/disable Multi-Shipment Checkout for each site via BM."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": true
+          - "@attributes": 
+              "attribute-id": listPriceDefault
+            "display-name": "Default List Price Book ID"
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+            "default-value": "usd-m-list-prices"
+          - "@attributes": 
+              "attribute-id": mapAPI
+            "display-name": "google map api key"
+            type: string
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": rateLimiterThreshold
+            "display-name": "Rate Limiter Threshold"
+            description: "This number indicates the number of times failures for Logins\x2C GiftCert Balances\x2C and Order Tracking requests will be allowed before displaying a CAPTCHA-style pop-up rate limiter"
+            type: int
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-value": "0.0"
+            "default-value": 5
+          - "@attributes": 
+              "attribute-id": sfraEnableOverlayApplePay
+            "display-name": "SFRA - Enable Apple Pay"
+            description: "Enables the Apple Pay plugin in the SFRA Unified Feature Cartridge. Note: The cartridge plugin_applepay must be added to the cartridge path and uploaded to your instance."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": true
+          - "@attributes": 
+              "attribute-id": sfraEnableOverlayCommercePayments
+            "display-name": "SFRA - Enable Salesforce Payments"
+            description: "Enables the Salesforce Payments plugin in the SFRA Unified Feature Cartridge. Note: The cartridge plugin_commercepayments must be added to the cartridge path and uploaded to your instance."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": false
+          - "@attributes": 
+              "attribute-id": sfraEnableOverlayDataDownload
+            "display-name": "SFRA - Enable Data Download"
+            description: "Enables the Data Download plugin in the SFRA Unified Feature Cartridge. Note: The cartridge plugin_datadownload must be added to the cartridge path and uploaded to your instance."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": true
+          - "@attributes": 
+              "attribute-id": sfraEnableOverlayGiftRegistry
+            "display-name": "SFRA - Enable Gift Registry"
+            description: "Enables the Gift Registry plugin in the SFRA Unified Feature Cartridge. Note: The cartridge plugin_giftregistry must be added to the cartridge path and uploaded to your instance."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": true
+          - "@attributes": 
+              "attribute-id": sfraEnableOverlayInStorePickup
+            "display-name": "SFRA - Enable In Store Pickup"
+            description: "Enables the In Store Pickup Plugin in the SFRA Unified Feature Cartridge. Note: The plugin_instorepickup must be added to the cartridge path and uploaded to your instance."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": true
+          - "@attributes": 
+              "attribute-id": sfraEnableOverlayProductCompare
+            "display-name": "SFRA - Enable Product Compare"
+            description: "Enables the Product Compare plugin in the SFRA Unified Feature Cartridge. Note: The cartridge plugin_productcompare must be added to the cartridge path and uploaded to your instance."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": true
+          - "@attributes": 
+              "attribute-id": sfraEnableOverlayWishlist
+            "display-name": "SFRA - Enable Wishlist"
+            description: "Enables the Wishlist plugin in the SFRA Unified Feature Cartridge. Note: The cartridge plugin_wishlists must be added to the cartridge path and uploaded to your instance."
+            type: boolean
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "default-value": true
+          - "@attributes": 
+              "attribute-id": slideshoweffect
+            "display-name": "Slide Slow effect"
+            description: "Please visit http://jquery.malsup.com/cycle/browser.html for complete visual effects"
+            type: "enum-of-string"
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - display: "blindX \x28slide from left\x29"
+                  value: blindX
+                - display: "blindY \x28slide from bottom\x29"
+                  value: blindY
+                - display: "blindZ \x28slide from bottom right corner\x29"
+                  value: blindZ
+                - display: "cover \x28slide from left\x2C clean\x29"
+                  value: cover
+                - "@attributes": 
+                    default: true
+                  display: "curtainX \x28expand from center horizontally\x29"
+                  value: curtainX
+                - display: "curtainY \x28expand from center vertically\x29"
+                  value: curtainY
+                - display: fade
+                  value: fade
+                - display: "fadeZoom \x28Zoom out from center\x29"
+                  value: fadeZoom
+                - display: "growX \x28grow from center horizontally\x29"
+                  value: growX
+                - display: "growY \x28grow from center vertically\x29"
+                  value: growY
+                - display: "none \x28No effects\x29"
+                  value: none
+                - display: "scrollUp \x28Scroll Up\x29"
+                  value: scrollUp
+                - display: "scrollDown \x28Scroll Down\x29"
+                  value: scrollDown
+                - display: "scrollLeft \x28Scroll Left\x29"
+                  value: scrollLeft
+                - display: "scrollRight \x28Scroll Right\x29"
+                  value: scrollRight
+                - display: "scrollHorz \x28Scroll Horizontally\x29"
+                  value: scrollHorz
+                - display: "scrollVert \x28Scroll Vertically\x29"
+                  value: scrollVert
+                - display: shuffle
+                  value: shuffle
+                - display: "slideX \x28Slide to the right\x29"
+                  value: slideX
+                - display: "slideY \x28Slide Bottom\x29"
+                  value: slideY
+                - display: toss
+                  value: toss
+                - display: turnUp
+                  value: turnUp
+                - display: turnDown
+                  value: turnDown
+                - display: turnLeft
+                  value: turnLeft
+                - display: turnRight
+                  value: turnRight
+                - display: uncover
+                  value: uncover
+                - display: wipe
+                  value: wipe
+                - display: zoom
+                  value: zoom
+          - "@attributes": 
+              "attribute-id": storeLookupMaxDistance
+            "display-name": "Store Lookup Max Distance"
+            description: "Store Lookup Max Distance"
+            type: "enum-of-int"
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "value-definitions": 
+              "value-definition": 
+                - display: 50
+                  value: 50
+                - "@attributes": 
+                    default: true
+                  display: 75
+                  value: 75
+                - display: 100
+                  value: 100
+                - display: 150
+                  value: 150
+                - display: 200
+                  value: 200
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": "SFRA Unified Feature Cartridge"
+            "display-name": "SFRA Unified Feature Cartridge"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": sfraEnableOverlayInStorePickup
+              - "@attributes": 
+                  "attribute-id": sfraEnableOverlayDataDownload
+              - "@attributes": 
+                  "attribute-id": sfraEnableOverlayWishlist
+              - "@attributes": 
+                  "attribute-id": sfraEnableOverlayGiftRegistry
+              - "@attributes": 
+                  "attribute-id": sfraEnableOverlayCommercePayments
+              - "@attributes": 
+                  "attribute-id": sfraEnableOverlayApplePay
+              - "@attributes": 
+                  "attribute-id": sfraEnableOverlayProductCompare
+          - "@attributes": 
+              "group-id": "Storefront Configs"
+            "display-name": "Storefront Configurations"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": listPriceDefault
+              - "@attributes": 
+                  "attribute-id": GoogleVerificationTag
+              - "@attributes": 
+                  "attribute-id": countryCode
+              - "@attributes": 
+                  "attribute-id": customerServiceEmail
+              - "@attributes": 
+                  "attribute-id": mapAPI
+          - "@attributes": 
+              "group-id": Copado
+            "display-name": Copado
+            attribute: 
+              "@attributes": 
+                "attribute-id": Copado
+    - "@attributes": 
+        "type-id": SlotConfiguration
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": body
+          - "@attributes": 
+              "attribute-id": callout
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": rank
+            "value-definitions": 
+              "value-definition": 
+                - value: 10
+                - value: 20
+                - value: 30
+                - value: 40
+                - "@attributes": 
+                    default: true
+                  value: 50
+                - value: 60
+                - value: 70
+                - value: 80
+                - value: 90
+                - value: 100
+    - "@attributes": 
+        "type-id": SourceCodeGroup
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+    - "@attributes": 
+        "type-id": Store
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": address1
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": address2
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": city
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": countryCode
+            "value-definitions": 
+              "value-definition": 
+                - display: "United States"
+                  value: US
+                - display: Canada
+                  value: CA
+                - display: Germany
+                  value: DE
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": email
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": fax
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": image
+          - "@attributes": 
+              "attribute-id": inventoryListID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": latitude
+            scale: 6
+            "min-value": "-90.0"
+            "max-value": "90.0"
+          - "@attributes": 
+              "attribute-id": longitude
+            scale: 6
+            "min-value": "-180.0"
+            "max-value": "180.0"
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": phone
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": posEnabled
+          - "@attributes": 
+              "attribute-id": postalCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": stateCode
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": storeEvents
+          - "@attributes": 
+              "attribute-id": storeHours
+          - "@attributes": 
+              "attribute-id": storeLocatorEnabled
+      "custom-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": countryCodeValue
+            "display-name": "Country Code Value"
+            description: "Country Code Value - for the form values"
+            type: string
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": inventoryListId
+            "display-name": "Store Inventory List ID"
+            description: "Store Inventory List ID"
+            type: string
+            "localizable-flag": false
+            "mandatory-flag": false
+            "externally-managed-flag": false
+            "min-length": 0
+      "group-definitions": 
+        "attribute-group": 
+          - "@attributes": 
+              "group-id": Basic
+            "display-name": "Basic Attributes"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": ID
+                  system: true
+              - "@attributes": 
+                  "attribute-id": name
+                  system: true
+              - "@attributes": 
+                  "attribute-id": inventoryListID
+                  system: true
+          - "@attributes": 
+              "group-id": Address
+            "display-name": Address
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": address1
+                  system: true
+              - "@attributes": 
+                  "attribute-id": address2
+                  system: true
+              - "@attributes": 
+                  "attribute-id": postalCode
+                  system: true
+              - "@attributes": 
+                  "attribute-id": city
+                  system: true
+              - "@attributes": 
+                  "attribute-id": stateCode
+                  system: true
+              - "@attributes": 
+                  "attribute-id": countryCode
+                  system: true
+              - "@attributes": 
+                  "attribute-id": longitude
+                  system: true
+              - "@attributes": 
+                  "attribute-id": latitude
+                  system: true
+              - "@attributes": 
+                  "attribute-id": countryCodeValue
+          - "@attributes": 
+              "group-id": Contact
+            "display-name": "Contact Details"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": phone
+                  system: true
+              - "@attributes": 
+                  "attribute-id": fax
+                  system: true
+              - "@attributes": 
+                  "attribute-id": email
+                  system: true
+          - "@attributes": 
+              "group-id": Details
+            "display-name": "Store Details"
+            attribute: 
+              - "@attributes": 
+                  "attribute-id": storeHours
+                  system: true
+              - "@attributes": 
+                  "attribute-id": storeEvents
+                  system: true
+              - "@attributes": 
+                  "attribute-id": image
+                  system: true
+              - "@attributes": 
+                  "attribute-id": longitude
+                  system: true
+              - "@attributes": 
+                  "attribute-id": posEnabled
+                  system: true
+              - "@attributes": 
+                  "attribute-id": latitude
+                  system: true
+          - "@attributes": 
+              "group-id": Inventory
+            "display-name": Inventory
+            attribute: 
+              "@attributes": 
+                "attribute-id": inventoryListId
+    - "@attributes": 
+        "type-id": StoreGroup
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": UUID
+            "min-length": 0
+            "field-length": 28
+          - "@attributes": 
+              "attribute-id": creationDate
+          - "@attributes": 
+              "attribute-id": lastModified
+          - "@attributes": 
+              "attribute-id": name
+            "min-length": 0
+    - "@attributes": 
+        "type-id": TrackingInfo
+      "system-attribute-definitions": 
+        "attribute-definition": 
+          - "@attributes": 
+              "attribute-id": ID
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": carrier
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": carrierService
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": trackingNumber
+            "min-length": 0
+          - "@attributes": 
+              "attribute-id": warehouseID
+            "min-length": 0
+    - "@attributes": 
+        "type-id": TrackingRef
