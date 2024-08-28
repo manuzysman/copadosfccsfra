@@ -4673,6 +4673,22 @@
                 <min-length>0</min-length>
                 <default-value>OK</default-value>
             </attribute-definition>
+            <attribute-definition attribute-id="Preference1">
+                <display-name xml:lang="x-default">Copado</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+                <default-value>1</default-value>
+            </attribute-definition>
+                        <attribute-definition attribute-id="Preference2">
+                <display-name xml:lang="x-default">Copado</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+                <default-value>2</default-value>
+            </attribute-definition>
             <attribute-definition attribute-id="GoogleVerificationTag">
                 <display-name xml:lang="x-default">GoogleVerificationTag - Content Attribute</display-name>
                 <type>string</type>
