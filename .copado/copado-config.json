@@ -1,7 +1,7 @@
-{
-    "work": {
-        "copadouserstoryid": "a1vJ4000000LjCYIA0",
-        "copadouserstoryname": "US-0000222",
+{    "work": {
+        "copadouserstoryid": "a1vJ4000000LjCdIAK",
+        "copadouserstoryname": "US-0000223",
+>>>>>>> feature/US-0000223
         "copadobasebranch": "main",
         "copadoenvbranch": "sfradev2",
         "copadolastcommit": null
