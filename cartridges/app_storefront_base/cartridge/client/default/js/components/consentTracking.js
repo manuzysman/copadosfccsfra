@@ -14,7 +14,7 @@ function showConsentModal() {
     var urlContent = trackingConsentData.data('url');
     var urlAccept = trackingConsentData.data('accept');
     var urlReject = trackingConsentData.data('reject');
-    var textYes = trackingConsentData.data('accepttext');
+    var text{!New Features Activation} = trackingConsentData.data('accepttext');
     var textNo = trackingConsentData.data('rejecttext');
     var textHeader = trackingConsentData.data('heading');
     var tokenName = trackingConsentData.data('tokenname');
@@ -32,7 +32,7 @@ function showConsentModal() {
         + '<div class="modal-footer">'
         + '<div class="button-wrapper">'
         + '<button class="affirm btn btn-primary" data-url="' + urlAccept + '" autofocus data-dismiss="modal">'
-        + textYes
+        + text{!New Features Activation}
         + '</button>'
         + '<button class="decline btn btn-primary" data-url="' + urlReject + '" data-dismiss="modal" >'
         + textNo

@@ -2159,8 +2159,8 @@
                 <order-required-flag>false</order-required-flag>
                 <value-definitions immutable="true">
                     <value-definition>
-                        <display xml:lang="x-default">Yes</display>
-                        <value>Yes</value>
+                        <display xml:lang="x-default">{!New Features Activation}</display>
+                        <value>{!New Features Activation}</value>
                     </value-definition>
                     <value-definition>
                         <display xml:lang="x-default">No</display>
