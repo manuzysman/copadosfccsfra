@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
     <standard-preferences>
         <all-instances>
@@ -73,7 +72,7 @@
         <all-instances/>
         <development>
             <preference preference-id="Copado">YES</preference>
-            <preference preference-id="Preference1">YES</preference>
+            <preference preference-id="Preference1">GO</preference>
             <preference preference-id="Preference2">NO</preference>
             <preference preference-id="sfraEnableOverlayApplePay">true</preference>
         </development>
@@ -81,4 +80,3 @@
         <production/>
     </custom-preferences>
 </preferences>
-
