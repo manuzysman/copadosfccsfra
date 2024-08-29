@@ -71,9 +71,9 @@
     <custom-preferences>
         <all-instances/>
         <development>
-            <preference preference-id="Copado">US224</preference>
+            <preference preference-id="Copado">YES</preference>
             <preference preference-id="Preference1">US224</preference>
-            <preference preference-id="Preference2">US226</preference>
+            <preference preference-id="Preference2">US220</preference>
             <preference preference-id="sfraEnableOverlayApplePay">true</preference>
         </development>
         <staging/>

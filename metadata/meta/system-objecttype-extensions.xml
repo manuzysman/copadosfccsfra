@@ -51,6 +51,15 @@
                 </value-definitions>
             </attribute-definition>
         </system-attribute-definitions>
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="Copado_test">
+                <display-name xml:lang="x-default">Test Conflaaaa</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
     </type-extension>
 
     <type-extension type-id="AppeasementItem">
