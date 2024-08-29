@@ -4696,6 +4696,22 @@
                 <externally-managed-flag>false</externally-managed-flag>
                 <min-length>0</min-length>
             </attribute-definition>
+            <attribute-definition attribute-id="Preference1">
+                <display-name xml:lang="x-default">Copado</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+                <default-value>OK</default-value>
+            </attribute-definition>
+            <attribute-definition attribute-id="Preference2">
+                <display-name xml:lang="x-default">Copado</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+                <default-value>OK</default-value>
+            </attribute-definition>
             <attribute-definition attribute-id="checkTLS">
                 <display-name xml:lang="x-default">Check TLS</display-name>
                 <description xml:lang="x-default">When true, this causes a TLS check to take place based on whether or not a cookie ('dw_TLSWarning') has been set on the browser</description>
@@ -5011,6 +5027,8 @@
             <attribute-group group-id="Copado">
                 <display-name xml:lang="x-default">Copado</display-name>
                 <attribute attribute-id="Copado"/>
+                <attribute attribute-id="Preference1"/>
+                <attribute attribute-id="Preference2"/>
             </attribute-group>
         </group-definitions>
     </type-extension>
