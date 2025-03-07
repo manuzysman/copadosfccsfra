@@ -7,7 +7,7 @@ var isDefault;
 
 /**
  * Create an alert to display the error message
- * @param {Object} message - Error message to display
+ * @param {Object} message - Error message to display fefdsdsf
  */
 function createErrorNotification(message) {
     var errorHtml = '<div class="alert alert-danger alert-dismissible valid-cart-error ' +
