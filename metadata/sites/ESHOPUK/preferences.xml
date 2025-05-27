@@ -40,7 +40,12 @@
     <custom-preferences>
         <all-instances/>
         <development>
-            <preference preference-id="Copado">ALL RIGHT</preference>
+            <preference preference-id="Copado">'{!Environment.Test}'</preference>
+                        <preference preference-id="Copado"> {!Environment.Test} </preference>
+
+                        <preference preference-id="Copado"> '{!Environment.Test}' </preference>
+
+
         </development>
         <staging/>
         <production/>
