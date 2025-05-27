@@ -3,8 +3,8 @@
         <all-instances>
             <preference preference-id="AccountNumberRetentionDays">0</preference>
             <preference preference-id="AddProductToBasketBehavior">IncrementQuantities</preference>
-            <preference preference-id="CouponGeneratorCodeLength">15</preference>
-            <preference preference-id="CouponGeneratorIncludeDashes">true</preference>
+            <preference preference-id="CouponGeneratorCodeLength">10</preference>
+            <preference preference-id="CouponGeneratorIncludeDashes">false</preference>
             <preference preference-id="CouponGeneratorIncludeVowels">true</preference>
             <preference preference-id="EnableSiteOrderNumbers">false</preference>
             <preference preference-id="FailNonPlacedOrdersAfter">0</preference>
