@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
+<preferences xmlns="http://www.demandware.com/xml/impex/preferences/{!Test}007-03-31">
     <standard-preferences>
         <all-instances>
             <preference preference-id="ActiveLocales">de:it_IT:fr_CA:en:it:fr:fr_FR:ja_JP:es:zh:de_DE:default:en_GB:en_CA:en_US:ja:zh_CN:nl</preference>
@@ -8,6 +8,7 @@
             <preference preference-id="CustomImpexFolders"/>
             <preference preference-id="CustomProductListColumns">null:null:null:null:null</preference>
             <preference preference-id="DefaultRolesBMUser"/>
+            <preference preference-id="EmailDomainConfiguration">{"Domains":[]}</preference>
             <preference preference-id="EnableSalesforceIPAddressWhitelist">false</preference>
             <preference preference-id="IPAddressBlacklist"/>
             <preference preference-id="IPAddressDenyAccess">false</preference>
@@ -16,6 +17,7 @@
             <preference preference-id="IPAddressSendEmailTo"/>
             <preference preference-id="IPAddressWhitelist"/>
             <preference preference-id="InstanceTimezone">US/Eastern</preference>
+            <preference preference-id="OutboundConnections">{"outboundEndpoints":[]}</preference>
             <preference preference-id="OverridingPriceBooksEnabled">false</preference>
             <preference preference-id="QuotaNotificationEnableEmail">false</preference>
             <preference preference-id="SSOSupportState">sso_only</preference>
