@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
+<preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-0{!Test}-{!Test}1">
     <standard-preferences>
         <all-instances>
             <preference preference-id="ActiveLocales">de:it_IT:fr_CA:en:it:fr:fr_FR:ja_JP:es:zh:de_DE:default:en_GB:en_CA:en_US:ja:zh_CN:nl</preference>
