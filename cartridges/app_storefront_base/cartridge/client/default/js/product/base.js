@@ -2,7 +2,7 @@
 var focusHelper = require('../components/focus');
 
 /**
- * Retrieves the relevant pid value
+ * Retrieves the relevant pid value dfefdezf
  * @param {jquery} $el - DOM container for a given add to cart button
  * @return {string} - value to be used when adding product to cart
  */
