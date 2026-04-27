@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
     <standard-preferences>
         <all-instances>
@@ -41,9 +40,8 @@
         <all-instances/>
         <development>
             <preference preference-id="Copado">ALL RIGHT</preference>
-        </development>
+            </development>
         <staging/>
         <production/>
     </custom-preferences>
 </preferences>
-
