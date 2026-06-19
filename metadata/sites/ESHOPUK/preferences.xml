@@ -2,7 +2,7 @@
 <preferences xmlns="http://www.demandware.com/xml/impex/preferences/2007-03-31">
     <standard-preferences>
         <all-instances>
-            <preference preference-id="AccountNumberRetentionDays">28</preference>
+            <preference preference-id="AccountNumberRetentionDays">30</preference>
             <preference preference-id="AddProductToBasketBehavior">IncrementQuantities</preference>
             <preference preference-id="CouponGeneratorIncludeDashes">true</preference>
             <preference preference-id="CouponGeneratorIncludeVowels">true</preference>
